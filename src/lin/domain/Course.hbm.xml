@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="lin.domain">
+	<class  name="Course" table="course">
+	<cache usage="read-write"/>
+	<!-- 主键策略 -->
+	<id name="course_id" type="java.lang.Integer">
+	<generator class="identity"/>  
+	</id>
+	<property name="course_name" type="java.lang.String">
+	<column name="course_name" length="32" />
+	</property>
+	<property name="teacher_name" type="java.lang.String">
+	<column name="teacher_name" length="32" />
+	</property>
+	<property name="course_time" type="java.lang.String">
+	<column name="course_time" length="32" />
+	</property>
+	<property name="course_period" type="java.lang.String">
+	<column name="course_period" length="32" />
+	</property>
+	<property name="course_credit" type="java.lang.String">
+	<column name="course_credit" length="32" />
+	</property>
+	<property name="course_site" type="java.lang.String">
+	<column name="course_site" length="32" />
+	</property>
+	<property name="course_introduce" type="java.lang.String">
+	<column name="course_introduce" length="200" />
+	</property>
+	</class>
+</hibernate-mapping>

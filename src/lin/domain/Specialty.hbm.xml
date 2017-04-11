@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="lin.domain">
+	<class  name="Specialty" table="specialty">
+	<cache usage="read-write"/>
+	<!-- 主键策略 -->
+	<id name="specialty_id" type="java.lang.Integer">
+	<generator class="identity"/>  
+	</id>
+	<property name="specialty_name" type="java.lang.String">
+	<column name="specialty_name" length="32" />
+	</property>
+	<property name="specialty_counsellor" type="java.lang.String">
+	<column name="specialty_counsellor" length="32" />
+	</property>
+	<property name="specialty_photonumber" type="java.lang.String">
+	<column name="specialty_photonumber" length="32" />
+	</property>
+	<property name="specialty_introduce" type="java.lang.String">
+	<column name="specialty_introduce" length="200" />
+	</property>
+
+	</class>
+</hibernate-mapping>

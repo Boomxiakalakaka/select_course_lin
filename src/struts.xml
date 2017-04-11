@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+	
+	<!-- 所有Action的定义都应该放在package下 -->
+	<package name="default"  extends="struts-default">
+		<!-- 定义登录action -->
+		<action name="loginAction_*" class="lin.action.LoginAction" method="{1}">
+			<result name="success">/WEB-INF/page/welcome.jsp</result>
+			<result name="welcome_student">/WEB-INF/page/welcome_student.jsp</result>
+			<result name="error">/WEB-INF/page/error.jsp</result>
+		</action>
+		
+		<!-- 跳转action -->
+		<action name="forword_page_*" class="lin.action.Forward_page" method="{1}">
+			<result name="addStudent">/WEB-INF/page/add_student.jsp</result>
+			<result name="deleteStudent">/WEB-INF/page/delete_student.jsp</result>
+			<result name="addCourse">/WEB-INF/page/add_course.jsp</result>
+			<result name="deleteCourse">/WEB-INF/page/delete_course.jsp</result>
+			<result name="addDepartment">/WEB-INF/page/add_department.jsp</result>
+			<result name="addTeacher">/WEB-INF/page/add_teacher.jsp</result>
+			<result name="studentSelectCourse">/WEB-INF/page/student_select_course.jsp</result>
+			<result name="queryCourse">/WEB-INF/page/query_course.jsp</result>
+			<result name="queryTeacher">/WEB-INF/page/query_teacher.jsp</result>
+			<result name="queryDepartment">/WEB-INF/page/query_department.jsp</result>
+			<result name="queryStudent">/WEB-INF/page/query_student.jsp</result>
+		</action>
+	
+		<!-- 将信息存到javabean -->
+		
+		<action name="saveMember_*" class="lin.action.SaveMember" method="{1}">
+			<result name="success">/WEB-INF/page/success.jsp</result>
+			<result name="error">/WEB-INF/page/error.jsp</result>
+		</action>
+		<!-- 删除信息 -->
+		<action name="deleteMember_*" class="lin.action.DeleteMember" method="{1}">
+			<result name="success">/WEB-INF/page/success.jsp</result>
+		</action>
+		<!-- 选课 -->
+		<action name="selectCourse_*" class="lin.action.SelectCourse" method="{1}">
+			<result name="studentSelectCourse">/WEB-INF/page/student_select_course.jsp</result>
+		</action>
+		
+	</package>
+	
+</struts>
