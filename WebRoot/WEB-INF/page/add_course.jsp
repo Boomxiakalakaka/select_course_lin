@@ -49,13 +49,13 @@ function checkForm() {
 
   <tr>
     <td width=30%>课程名称:</td>
-    <td width=70%><input id="course_name" name="course_name" type="text" size="20" /></td>
+    <td width=70%><input id="course_name" name="course.course_name" type="text" size="20" /></td>
   </tr>
 
   <tr>
     <td width=30%>上课老师:</td>
     <td width=70%>
-      <select name="teacher_name">
+      <select name="course.teacher_name">
       <%
         for(Teacher teacher:teacherList) {
       %>
@@ -68,25 +68,25 @@ function checkForm() {
 
   <tr>
     <td width=30%>上课时间:</td>
-    <td width=70%><input id="course_time" name="course_time" type="text" size="40" /></td>
+    <td width=70%><input id="course_time" name="course.course_time" type="text" size="40" /></td>
   </tr>
 	<tr>
     <td width=30%>课时:</td>
-    <td width=70%><input id="course_period" name="course_period" type="text" size="40" /></td>
+    <td width=70%><input id="course_period" name="course.course_period" type="text" size="40" /></td>
   </tr>
   <tr>
     <td width=30%>上课地点:</td>
-    <td width=70%><input id="course_site" name="course_site" type="text" size="40" /></td>
+    <td width=70%><input id="course_site" name="course.course_site" type="text" size="40" /></td>
   </tr>
 
   <tr>
     <td width=30%>课程学分:</td>
-    <td width=70%><input id="course_credit" name="course_credit" type="text" size="8" /></td>
+    <td width=70%><input id="course_credit" name="course.course_credit" type="text" size="8" /></td>
   </tr>
 
   <tr>
     <td width=30%>附加信息:</td>
-    <td width=70%><input id="course_introduce" name="course_introduce" type="text" size="100" /></td>
+    <td width=70%><input id="course_introduce" name="course.course_introduce" type="text" size="100" /></td>
   </tr>
 
   <tr bgcolor='#FFFFFF'>

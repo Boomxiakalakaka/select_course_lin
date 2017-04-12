@@ -49,52 +49,52 @@ function checkForm() {
 
   <tr>
     <td width=30%>教师姓名:</td>
-    <td width=70%><input id="teacher_name" name="teacher_name" type="text" size="12" /></td>
+    <td width=70%><input id="teacher_name" name="teacher.teacher_name" type="text" size="12" /></td>
   </tr>
 
   <tr>
     <td width=30%>登录密码:</td>
-    <td width=70%><input id="teacher_password" name="teacher_password" type="text" size="30" /></td>
+    <td width=70%><input id="teacher_password" name="teacher.teacher_password" type="text" size="30" /></td>
   </tr>
 
   <tr>
     <td width=30%>性别:</td>
-    <td width=70%><input id="teacher_gender" name="teacher_gender" type="text" size="2" /></td>
+    <td width=70%><input id="teacher_gender" name="teacher.teacher_gender" type="text" size="2" /></td>
   </tr>
 
  <tr>
     <td width=30%>教师职位:</td>
-    <td width=70%><input id="teacher_post" name="teacher_post" type="text" size="20" /></td>
+    <td width=70%><input id="teacher_post" name="teacher.teacher_post" type="text" size="20" /></td>
   </tr>
   
   <tr>
     <td width=30%>入职日期:</td>
-    <td width=70%><input type="text" readonly id="entry_time"  name="entry_time" onclick="setDay(this);"/></td>
+    <td width=70%><input type="text" readonly id="entry_time"  name="teacher.entry_time" onclick="setDay(this);"/></td>
   </tr>
 
   <tr>
     <td width=30%>身份证号:</td>
-    <td width=70%><input id="teacher_idcard" name="teacher_idcard" type="text" size="20" /></td>
+    <td width=70%><input id="teacher_idcard" name="teacher.teacher_idcard" type="text" size="20" /></td>
   </tr>
 
   <tr>
     <td width=30%>联系电话:</td>
-    <td width=70%><input id="phone_number" name="phone_number" type="text" size="20" /></td>
+    <td width=70%><input id="phone_number" name="teacher.phone_number" type="text" size="20" /></td>
   </tr>
 
   <tr>
     <td width=30%>教师照片:</td>
-    <td width=70%><input id="photoaddress" name="teacherPhotoFile" type="file" size="50" /></td>
+    <td width=70%><input id="photoaddress" name="teacher.teacherPhotoFile" type="file" size="50" /></td>
   </tr>
 
   <tr>
     <td width=30%>家庭地址:</td>
-    <td width=70%><input id="familyaddress" name="familyaddress" type="text" size="100" /></td>
+    <td width=70%><input id="familyaddress" name="teacher.familyaddress" type="text" size="100" /></td>
   </tr>
 
   <tr>
     <td width=30%>附加信息:</td>
-    <td width=70%><input id="introduce" name="introduce" type="text" size="100" /></td>
+    <td width=70%><input id="introduce" name="teacher.introduce" type="text" size="100" /></td>
   </tr>
 
   <tr bgcolor='#FFFFFF'>

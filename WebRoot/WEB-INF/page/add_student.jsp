@@ -61,28 +61,28 @@ function checkForm() {
 
   <tr>
     <td width=30%>姓名:</td>
-    <td width=70%><input id="student_name" name="student_name" type="text" size="12" /></td>
+    <td width=70%><input id="student_name" name="student.student_name" type="text" size="12" /></td>
   </tr>
 
   <tr>
     <td width=30%>登录密码:</td>
-    <td width=70%><input id="student_password" name="student_password" type="text" size="30" /></td>
+    <td width=70%><input id="student_password" name="student.student_password" type="text" size="30" /></td>
   </tr>
 
   <tr>
     <td width=30%>性别:</td>
-    <td width=70%><input id="student_gender" name="student_gender" type="text" size="2" /></td>
+    <td width=70%><input id="student_gender" name="student.student_gender" type="text" size="2" /></td>
   </tr>
   
   <tr>
     <td width=30%>身份证号码:</td>
-    <td width=70%><input id="idcard" name="idcard" type="text" size="2" /></td>
+    <td width=70%><input id="idcard" name="student.idcard" type="text" size="2" /></td>
   </tr>
 
   <tr>
     <td width=30%>所在学院:</td>
     <td width=70%>
-      <select name="department_id">
+      <select name="student.department_id">
       <%
         for(Department list:departmentList) {
       %>
@@ -96,32 +96,32 @@ function checkForm() {
 
   <tr>
     <td width=30%>政治面貌:</td>
-    <td width=70%><input id="politics" name="politics" type="text" size="20" /></td>
+    <td width=70%><input id="politics" name="student.politics" type="text" size="20" /></td>
   </tr>
 
   <tr>
     <td width=30%>学生照片:</td>
-    <td width=70%><input id="photoaddress" name="photoaddress" type="file" size="50" /></td>
+    <td width=70%><input id="photoaddress" name="student.photoaddress" type="file" size="50" /></td>
   </tr>
 
   <tr>
     <td width=30%>联系电话:</td>
-    <td width=70%><input id="phonenumber" name="phonenumber" type="text" size="20" /></td>
+    <td width=70%><input id="phonenumber" name="student.phonenumber" type="text" size="20" /></td>
   </tr>
 
   <tr>
     <td width=30%>学生邮箱:</td>
-    <td width=70%><input id="mailbox" name="mailbox" type="text" size="30" /></td>
+    <td width=70%><input id="mailbox" name="student.mailbox" type="text" size="30" /></td>
   </tr>
 
   <tr>
     <td width=30%>联系qq:</td>
-    <td width=70%><input id="qqnumber" name="qqnumber" type="text" size="20" /></td>
+    <td width=70%><input id="qqnumber" name="student.qqnumber" type="text" size="20" /></td>
   </tr>
 
   <tr>
     <td width=30%>家庭地址:</td>
-    <td width=70%><input id="familyaddress" name="familyaddress" type="text" size="100" /></td>
+    <td width=70%><input id="familyaddress" name="student.familyaddress" type="text" size="100" /></td>
   </tr>
 
   <tr bgcolor='#FFFFFF'>

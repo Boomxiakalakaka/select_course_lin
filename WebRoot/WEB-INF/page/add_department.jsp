@@ -45,22 +45,22 @@ function checkForm() {
 
   <tr>
     <td width=30%>学院名称:</td>
-    <td width=70%><input id="department_name" name="department_name" type="text" size="20" /></td>
+    <td width=70%><input id="department_name" name="department.department_name" type="text" size="20" /></td>
   </tr>
 
   <tr>
     <td width=30%>院长姓名:</td>
-    <td width=70%><input id="department_director" name="department_director" type="text" size="10" /></td>
+    <td width=70%><input id="department_director" name="department.department_director" type="text" size="10" /></td>
   </tr>
 
   <tr>
     <td width=30%>联系电话:</td>
-    <td width=70%><input id="department_photonumber" name="department_photonumber" type="text" size="20" /></td>
+    <td width=70%><input id="department_photonumber" name="department.department_photonumber" type="text" size="20" /></td>
   </tr>
 
   <tr>
     <td width=30%>学院介绍:</td>
-    <td width=70%><input id="department_introduce" name="department_introduce" type="text" size="100" /></td>
+    <td width=70%><input id="department_introduce" name="department.department_introduce" type="text" size="100" /></td>
   </tr>
 
   <tr bgcolor='#FFFFFF'>
