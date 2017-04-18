@@ -1,5 +1,7 @@
 package lin.domain;
 
+import java.util.Date;
+
 public class Teacher {
 	
 	private int teacher_id;
@@ -7,7 +9,7 @@ public class Teacher {
 	private int teacher_gender;
 	private String teacher_idcard;		//老师身份证号
 	private String teacher_post;		//老师职位
-	private String entry_time;			//教师入职时间
+	private Date entry_time;			//教师入职时间
 	private String teacher_password;
 	private String phone_number;
 	private String photoaddress;
@@ -43,10 +45,10 @@ public class Teacher {
 	public void setTeacher_post(String teacher_post) {
 		this.teacher_post = teacher_post;
 	}
-	public String getEntry_time() {
+	public Date getEntry_time() {
 		return entry_time;
 	}
-	public void setEntry_time(String entry_time) {
+	public void setEntry_time(Date entry_time) {
 		this.entry_time = entry_time;
 	}
 	public String getTeacher_password() {
@@ -79,5 +81,6 @@ public class Teacher {
 	public void setIntroduce(String introduce) {
 		this.introduce = introduce;
 	}
+	
 	
 }

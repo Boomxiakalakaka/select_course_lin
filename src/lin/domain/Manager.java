@@ -1,12 +1,14 @@
 package lin.domain;
 
+import java.util.Date;
+
 public class Manager {
 
 		
 		private int manager_id;
 		private String manager_name;
 		private int manager_gender;
-		private String manager_birthday;
+		private Date manager_birthday;
 		private String manager_password;
 		public int getManager_id() {
 			return manager_id;
@@ -26,10 +28,10 @@ public class Manager {
 		public void setManager_gender(int manager_gender) {
 			this.manager_gender = manager_gender;
 		}
-		public String getManager_birthday() {
+		public Date getManager_birthday() {
 			return manager_birthday;
 		}
-		public void setManager_birthday(String manager_birthday) {
+		public void setManager_birthday(Date manager_birthday) {
 			this.manager_birthday = manager_birthday;
 		}
 		public String getManager_password() {
@@ -38,7 +40,6 @@ public class Manager {
 		public void setManager_password(String manager_password) {
 			this.manager_password = manager_password;
 		}
-		
 		
 		
 		

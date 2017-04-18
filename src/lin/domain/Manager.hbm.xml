@@ -14,7 +14,7 @@
 	<property name="manager_gender" type="java.lang.Integer">
 	<column name="manager_gender" length="32" />
 	</property>
-	<property name="manager_birthday" type="java.lang.String">
+	<property name="manager_birthday" type="timestamp">
 	<column name="manager_birthday" length="32" />
 	</property>
 	<property name="manager_password" type="java.lang.String">
